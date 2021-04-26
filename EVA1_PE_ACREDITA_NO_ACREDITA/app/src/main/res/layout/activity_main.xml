@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="14sp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="NOMBRE"
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="34sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="NO DE CONTROL"
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="34sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="4sp">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="78dp"
+            android:layout_margin="14sp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/tec2_logo" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="14sp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/tecnm_logo" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44sp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="151dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44sp"
+            android:text="Puntos para acreditar:"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtVwPuntos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44sp"
+            android:layout_weight="1"
+            android:text="0"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <SeekBar
+        android:id="@+id/sbPuntos"
+        style="@style/Widget.AppCompat.SeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14sp"
+        android:progressTint="@color/teal_200"
+        android:thumb="@android:drawable/btn_default_small" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="93dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14sp"
+            android:text="Calificación:"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtVwCali"
+            android:layout_width="271dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14sp"
+            android:layout_weight="1"
+            android:text="0"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <SeekBar
+        android:id="@+id/sbCali"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14sp"
+        android:progressTint="@color/teal_200"
+        android:thumb="@android:drawable/btn_default_small" />
+
+    <TextView
+        android:id="@+id/txtVwAcreditar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="104sp"
+        android:gravity="center"
+        android:textColor="@color/design_default_color_error"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+</LinearLayout>
